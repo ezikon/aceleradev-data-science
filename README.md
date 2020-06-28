@@ -1,21 +1,53 @@
-# aceleradev-data-science
+# Conhecendo melhor nossa base de consumidores: qual estado possui os clientes com melhores pontuações de crédito?
 
-Pré-processamento de dados em Python.
+## Objetivo
 
-Neste desafio vamos praticar a manipulação de dados utilizando a biblioteca pandas. Manipulação de dados é uma das tarefas mais fundamentais para um cientista de dados e o pandas - biblioteca mais popular do Python no assunto - ajuda a tornar essa tarefa mais agradável.
+Queremos conhecer melhor nossos clientes por estado. Para isso, iniciamos uma análise na pontuação de crédito. 
+Para realizar a verificação inicial, precisamos de alguns valores.
+Os valores são a média, a mediana, a moda e o desvio padrão da pontuação de crédito.
 
-Objetivo
+## Tópicos
 
-O objetivo deste desafio é extrair algumas informações quantitativas que nos ajudem a compreender a natureza dos dados à disposição e ganhar alguns insights sobre o data set.
+Neste desafio você aprenderá:
 
-Para isso, utilizaremos o data set Black Friday disponibilizado originalmente pela Analytics Vidhya e acessível publicamente através do Kaggle. O data set traz algumas variáveis relativas à transações comerciais realizadas durante a Black Friday em uma determinada loja de varejo. Cada observação é relativa a um determinado item comprado por um usuário e um usuário pode ter comprado mais de um item.
+- Média;
+- Mediana;
+- Moda;
+- Desvio padrão.
 
-Tópicos
+## Requisitos
 
-Neste desafios nós vamos explorar:
+Você precisará de python 3.6 (ou superior).
 
-Python
+O recomendado é você utilizar um [ambiente virtual](https://pythonacademy.com.br/blog/python-e-virtualenv-como-programar-em-ambientes-virtuais). Para isto, execute os comandos como no exemplo abaixo:
 
-Pandas
+    pip3 install virtualenv
+    virtualenv venv -p python3
+    source venv/bin/activate 
 
-Jupyter notebook
+Ao terminar o desafio, você pode sair do ambiente criado com o comando `deactivate`
+
+## Detalhes
+
+A resposta deve conter os valores da média, mediana, moda e desvio padrão da pontuação de crédito para cada estado do dataset.
+O arquivo para submissão deve estar em formato json, conforme o arquivo exemplo "submission.json".
+
+**OBSERVAÇÃO:**  É recomendado utilizar Python e pandas para esse desafio, mas também é possível utilizar outras ferramentas e linguagens de programação.
+
+Descrição dos dados:
+'id': Identificador do cliente
+'sobrenome': Sobrenome do cliente
+'pontuacao_credito': Pontuação de crédito do cliente (quanto maior, melhor o cliente geralmente)
+'estado_residencia': Estado de residência do cliente
+'genero': Gênero do cliente
+'nivel_estabilidade': Nível de estabilidade do cliente
+'saldo_conta': Saldo disponível na conta do cliente
+'numero_produtos': Número de produtos que o cliente consome
+'possui_cartao_de_credito': Possui um cartão de crédito cadastrado
+'membro_ativo': Membro acessa e consome frequentemente
+
+Obs: Os dados são fictícios, mas tentam representar a realidade de uma base de clientes de um produto SaaS. 
+
+
+
+
